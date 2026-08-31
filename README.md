@@ -13,7 +13,7 @@ The project team currently focuses on the design and the implementation of the P
 - The GitHub repository for this document is [hosted on
   Github](https://github.com/Ministerul-Afacerilor-Interne/rowallet-documentation).
 - For reading, the content is available at [this
-  website](https://github.com/Ministerul-Afacerilor-Interne/rowallet-documentation).
+  website](https://ministerul-afacerilor-interne.github.io/rowallet-documentation/).
 
 
 ## Providing Feedback
