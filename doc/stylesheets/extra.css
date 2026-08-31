@@ -1,0 +1,58 @@
+
+.md-grid {
+  max-width: 80rem; 
+}
+
+/* Column width control for the data register table in
+   architecture-concept/02-architecture/02-data-register.md.
+
+   The class sits on the wrapping <div>, so table rules have to target the
+   <table> inside it. The long selectors are needed to outrank the theme's own
+   table rules, which set display:inline-block (which makes table-layout a
+   no-op) and min-width:5rem on every header cell.
+
+   Columns: 1 Name | 2 User | 3 MDVM | 4 WB | 5 RWSCA | 6 PNS | 7 WI | 8 HKS |
+            9 PP | 10 EP | 11 RP | 12 MPP | 13 Description
+   Keep this in sync when columns are added or removed. */
+
+/* Scroll horizontally instead of squeezing the table on narrow viewports. */
+.data-register-table {
+  overflow-x: auto;
+}
+
+.md-typeset .data-register-table table:not([class]) {
+  display: table;
+  width: 100%;
+  min-width: 50rem;
+  table-layout: fixed;
+}
+
+/* The theme's cell padding and min-width leave no room for 13 columns. */
+.md-typeset .data-register-table table:not([class]) th,
+.md-typeset .data-register-table table:not([class]) td {
+  min-width: 0;
+  padding: 0.5em 0.3em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* With table-layout: fixed the header cells define the column widths. */
+.md-typeset .data-register-table table:not([class]) th:first-child { /* Name */
+  width: 18%;
+}
+
+.md-typeset .data-register-table table:not([class]) th:last-child { /* Description */
+  width: 32.5%;
+}
+
+/* Participant columns: User (2) through MPP (12). */
+.md-typeset .data-register-table table:not([class]) th:nth-child(n+2):nth-child(-n+12) {
+  width: 4.5%;
+}
+
+.md-typeset .data-register-table table:not([class]) th:nth-child(n+2):nth-child(-n+12),
+.md-typeset .data-register-table table:not([class]) td:nth-child(n+2):nth-child(-n+12) {
+  text-align: center;
+}

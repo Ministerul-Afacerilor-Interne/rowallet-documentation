@@ -1,0 +1,39 @@
+# Table of Content
+
+- [1 Scope](01-scope/01-scope.md)
+    - [1.1 Wallet Lifecycle](01-scope/01-scope.md#11-wallet-lifecycle)
+    - [1.2 PID Lifecycle](01-scope/01-scope.md#12-pid-lifecycle)
+    - [1.3 EAA Lifecycle](01-scope/01-scope.md#13-eaa-lifecycle)
+- 2 Architecture
+    - [2.1 Decomposition](02-architecture/01-decomposition.md)
+        - [2.1.1 Roles](02-architecture/01-decomposition.md#211-roles)
+        - [2.1.2 Components](02-architecture/01-decomposition.md#212-components)
+        - [2.1.3 Logical Components](02-architecture/01-decomposition.md#213-logical-components)
+        - [2.1.4 Wallet Instance (WI)](02-architecture/01-decomposition.md#214-wallet-instance-wi)
+        - [2.1.5 Wallet Provider Backend (WB)](02-architecture/01-decomposition.md#215-wallet-provider-backend-wb)
+        - [2.1.6 Remote Wallet Secure Cryptographic Device and Application (RWSCD/RWSCA)](02-architecture/01-decomposition.md#216-remote-wallet-secure-cryptographic-device-and-application-rwscdrwsca)
+        - [2.1.7 Mobile Device Vulnerability Management Service (MDVM)](02-architecture/01-decomposition.md#217-mobile-device-vulnerability-management-service-mdvm)
+    - [2.2 Data Register](02-architecture/02-data-register.md)
+    - [2.3 Cryptography](02-architecture/03-cryptography.md)
+    - [2.4 Communication Channels](02-architecture/04-communication-channels.md)
+    - [2.5 Mobile Devices](02-architecture/05-mobile-devices.md)
+- 3 Data Flows
+    - 3.1 Wallet Lifecycle
+        - [3.1.1 Wallet Activation](03-data-flows/11-wallet-activation.md)
+        - [3.1.2 Wallet Dashboard](03-data-flows/12-wallet-dashboard.md)
+        - [3.1.3 Wallet Revocation](03-data-flows/13-wallet-revocation.md)
+        - [3.1.4 Wallet Deletion](03-data-flows/14-wallet-deletion.md)
+    - 3.2 PID Lifecycle
+        - [3.2.1 PID Issuance](03-data-flows/21-pid-issuance.md)
+        - [3.2.2 PID Presentation](03-data-flows/22-pid-presentation.md)
+        - [3.2.3 PID Deletion](03-data-flows/23-pid-deletion.md)
+    - 3.3 EAA Lifecycle
+        - [3.3.1 EAA Issuance](03-data-flows/31-eaa-issuance.md)
+        - [3.3.2 EAA Presentation](03-data-flows/32-eaa-presentation.md)
+        - [3.3.3 EAA Deletion](03-data-flows/33-eaa-deletion.md)
+- [4 Wallet Backend](04-wallet-backend/01-wallet-backend.md)
+- [5 Remote WSCA](05-remote-wsca/01-remote-wsca.md)
+- [6 MDVM](06-mdvm/01-mdvm.md)
+- [7 Push Notification Service](07-push-notification-service/01-push-notification-service.md)
+- [8 Message Queue](08-message-queue/01-message-queue.md)
+- [9 UI/UX](09-ui-ux/00-index.md)

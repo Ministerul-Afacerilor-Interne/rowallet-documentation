@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-material
+plantuml
+mkdocs_puml
+mkdocs-glightbox
+mike
